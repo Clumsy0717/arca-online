@@ -6,16 +6,19 @@
 <title>Signup - Arca</title>
 <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/logo.png">
 <link rel="stylesheet" href="../assets/css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
 </head>
 <div>
-
+<div class="glow-orb glow-orb-1"></div>
+<div class="glow-orb glow-orb-2"></div>
+<div class="glow-orb glow-orb-3"></div>
 <header>
     <div class="left">
         <div class="logo"><img src="../assets/img/arca.png" alt="logo"></div>
         <nav>
             <a href="../index.php">Home</a>
-            <a href="login.html">Login</a>
-            <a href="register.html">register</a>
+            <a href="login.php">Login</a>
+            <a href="register.php">Register</a>
 
         </nav>
     </div>
@@ -30,7 +33,8 @@
     </div>
     <div class="container-login">
     <div class="intro">
-        <h1>Create Account</h1>
+        <div class="intro-eyebrow">Inventory System</div>
+        <h1>Create <span>Account</span></h1>
         <p>Fill in the information below to register your account and start managing your inventory.</p>
     </div>
     <div class="form-box">
@@ -50,7 +54,7 @@
             <p id="password-error" class="error-msg" style="display:none;"></p>
 
             <button type="submit" name="signup">Signup</button>
-            <p class="signup-link">Already have an account? <a href="login.html">Login here</a></p>
+            <p class="signup-link">Already have an account? <a href="login.php">Login here</a></p>
         </form>
     </div>
     </div>

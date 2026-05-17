@@ -1,3 +1,7 @@
+<?php
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,14 +12,16 @@
 <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
-
+<div class="glow-orb glow-orb-1"></div>
+<div class="glow-orb glow-orb-2"></div>
+<div class="glow-orb glow-orb-3"></div>
 <header>
     <div class="left">
         <div class="logo"><img src="../assets/img/arca.png" alt="logo"></div>
         <nav>
             <a href="../index.php">Home</a>
-            <a href="login.html">Login</a>
-            <a href="register.html">register</a>
+            <a href="login.php">Login</a>
+            <a href="register.php">Register</a>
         </nav>
     </div>
 </header>
@@ -27,8 +33,9 @@
         <div class="bubble"></div>
     </div>
     <div class="container-login">
-            <div class="intro">
-        <h1>Welcome Back!</h1>
+    <div class="intro">
+        <div class="intro-eyebrow">Inventory System</div>
+        <h1>Welcome <span>Back!</span></h1>
         <p>Enter your account details below to access your inventory dashboard.</p>
     </div>
     <div class="form-box">
@@ -39,7 +46,7 @@
                 <span class="toggle-pass" data-target="password">show</span>
             </div>
             <button type="submit" name="login">Login</button>
-            <p class="signup-link">Don't have an account? <a href="register.html">Register here</a></p>
+            <p class="signup-link">Don't have an account? <a href="register.php">Register here</a></p>
         </form>
         <p id="error" class="error-msg" style="display: none;"></p>
     </div>
